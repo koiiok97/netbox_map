@@ -1,28 +1,26 @@
 import React, { useRef, useEffect } from "react";
 import * as d3 from "d3";
 
-const headers = {
-  "Content-Type": "application/json",
-  Authorization: "Token e7ba8d619dcdf1da2e587918550dbef118dd8adc",
-};
+export default function NetworkGraph({ data }) {
+  //   const data = {
+  //     nodes: [{ id: "A", location: "server" }, { id: "B" }, { id: "C" }],
+  //     links: [
+  //       { source: "A", target: "B", color: "red" },
+  //       { source: "B", target: "C" },
+  //       { source: "C", target: "A" },
+  //     ],
+  //   };
 
-export default function NetworkGraph() {
-  const data = {
-    nodes: [{ id: "A", location: "server" }, { id: "B" }, { id: "C" }],
-    links: [
-      { source: "A", target: "B", color: "red" },
-      { source: "B", target: "C" },
-      { source: "C", target: "A" },
-    ],
-  };
+  const width = window.innerWidth;
+  const height = window.innerHeight;
 
   const svgRef = useRef();
 
   useEffect(() => {
     const svg = d3
       .select(svgRef.current)
-      .attr("width", 600)
-      .attr("height", 400);
+      .attr("width", width)
+      .attr("height", height);
 
     const simulation = d3
       .forceSimulation(data.nodes)
@@ -31,10 +29,10 @@ export default function NetworkGraph() {
         d3
           .forceLink(data.links)
           .id((d) => d.id)
-          .distance(200)
+          .distance(50)
       )
-      .force("charge", d3.forceManyBody().strength(-400))
-      .force("center", d3.forceCenter(300, 200));
+      .force("charge", d3.forceManyBody().strength(-5))
+      .force("center", d3.forceCenter(width / 2, height / 2));
 
     svg.selectAll("line").data(data.links).join("line").attr("stroke", "black");
 
@@ -43,7 +41,7 @@ export default function NetworkGraph() {
       .data(data.nodes)
       .join("circle")
       .attr("r", 10)
-      .attr("fill", "blue")
+      .attr("fill", (d) => d.color)
       .call(drag(simulation));
 
     node.append("title").text((d) => d.id);

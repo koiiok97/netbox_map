@@ -1,11 +1,10 @@
 import "./App.css";
-
-import NetworkGraph from "./NetworkGraph";
+import JsonParseData from "./JsonParseData";
 
 export default function App() {
   return (
     <>
-      <NetworkGraph></NetworkGraph>
+      <JsonParseData></JsonParseData>
     </>
   );
 }
