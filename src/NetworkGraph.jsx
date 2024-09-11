@@ -4,7 +4,6 @@ import * as d3 from "d3";
 export default function NetworkGraph({ data }) {
   const svgRef = useRef();
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-  console.log(data);
 
   useEffect(() => {
     const updateDimensions = () => {
@@ -40,8 +39,8 @@ export default function NetworkGraph({ data }) {
         d3.forceCenter(dimensions.width / 2, dimensions.height / 2)
       )
       .force("collision", d3.forceCollide().radius(22))
-      .force("x", d3.forceX(dimensions.width / 2).strength(0.01))
-      .force("y", d3.forceY(dimensions.height / 2).strength(0.01));
+      .force("x", d3.forceX(dimensions.width / 2).strength(0.001))
+      .force("y", d3.forceY(dimensions.height / 2).strength(0.001));
 
     svg.selectAll("line").data(data.links).join("line").attr("stroke", "black");
 

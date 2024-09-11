@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NetworkGraph from "./NetworkGraph";
+import Menu from "./components/menu/Menu";
 
 const urlDevices = "http://192.168.0.216:8000/api/dcim/devices/?format=json";
 const urlRacks = "http://192.168.0.216:8000/api/dcim/racks/?format=json";
@@ -13,7 +14,10 @@ const colorNode = "rgba(88, 88, 88)";
 
 export default function ParseData() {
   const [networkData, setNetworkData] = useState({ nodes: [], links: [] });
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [selectedRoles, setSelectedRoles] = useState([]);
+  const [allRoles, setAllRoles] = useState([]);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -25,6 +29,7 @@ export default function ParseData() {
           id: rack.name,
           color: colorRack,
           size: rack.device_count + 10,
+          role: null,
           location: rack.location.name,
         }));
 
@@ -42,6 +47,11 @@ export default function ParseData() {
             source: dev.rack.name,
             target: dev.name,
           }));
+        const roles = [
+          ...new Set(responseDevices.results.map((dev) => dev.role.name)),
+        ];
+        setAllRoles(roles);
+
         setNetworkData({
           nodes: [...nodeRacks, ...nodeDevices],
           links: linkDevices,
@@ -53,10 +63,48 @@ export default function ParseData() {
       }
     };
     fetchData();
-    console.log(networkData);
   }, []);
 
-  loading && <div>Loading...</div>;
+  const filterNodes = selectedRoles.length
+    ? networkData.nodes.filter((node) => {
+        if (node.role === null) return true;
+        return selectedRoles.includes(node.role);
+      })
+    : networkData.nodes;
 
-  return <NetworkGraph data={networkData} />;
+  // const filterDataTest = {
+  //   nodes: filterNodes.filter((node) => {
+  //     filterNodes.some((node) => node.size > 0) &&
+  //       filterNodes.some((node) => node.size === undefined);
+  //   }),
+  // };
+  // console.log(filterDataTest);
+
+  const filterData = {
+    nodes: filterNodes,
+    links: networkData.links
+      .filter(
+        (link) =>
+          filterNodes.some((node) => node.id === link.source) &&
+          filterNodes.some((node) => node.id === link.target)
+      )
+      .map((link) => ({
+        source: link.source,
+        target: link.target,
+      })),
+  };
+
+  loading ? <div>Loading....</div> : "123";
+  // console.log(networkData);
+
+  return (
+    <>
+      <NetworkGraph data={filterData} />
+      <Menu
+        roles={allRoles}
+        selectedRoles={selectedRoles}
+        setSelectedRoles={setSelectedRoles}
+      />
+    </>
+  );
 }
