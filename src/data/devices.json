@@ -1,0 +1,3538 @@
+{
+  "count": 35,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": 24,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/24/?format=json",
+      "display": "Battery",
+      "name": "Battery",
+      "device_type": {
+        "id": 15,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/15/?format=json",
+        "display": "BAT-12-50",
+        "manufacturer": {
+          "id": 1,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/1/?format=json",
+          "display": "SNR",
+          "name": "SNR",
+          "slug": "snr"
+        },
+        "model": "BAT-12-50",
+        "slug": "bat-12-50"
+      },
+      "role": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/4/?format=json",
+        "display": "Power supply",
+        "name": "Power supply",
+        "slug": "power-supply"
+      },
+      "device_role": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/4/?format=json",
+        "display": "Power supply",
+        "name": "Power supply",
+        "slug": "power-supply"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/4/?format=json",
+        "display": "Серверная",
+        "name": "Серверная",
+        "slug": "servernaya",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/3/?format=json",
+        "display": "shs-3",
+        "name": "shs-3"
+      },
+      "position": 1,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": null,
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2024-05-29T08:28:17.170684Z",
+      "last_updated": "2024-05-29T08:28:17.170709Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 27,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/27/?format=json",
+      "display": "Continent",
+      "name": "Continent",
+      "device_type": {
+        "id": 14,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/14/?format=json",
+        "display": "ipc-500fw",
+        "manufacturer": {
+          "id": 3,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/3/?format=json",
+          "display": "kontinent",
+          "name": "kontinent",
+          "slug": "kontinent"
+        },
+        "model": "ipc-500fw",
+        "slug": "kontinent-ipc-500fw"
+      },
+      "role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "device_role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/4/?format=json",
+        "display": "Серверная",
+        "name": "Серверная",
+        "slug": "servernaya",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/3/?format=json",
+        "display": "shs-3",
+        "name": "shs-3"
+      },
+      "position": 19,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": null,
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2024-05-29T08:35:23.871243Z",
+      "last_updated": "2024-05-29T08:44:11.075751Z",
+      "console_port_count": 1,
+      "console_server_port_count": 0,
+      "power_port_count": 1,
+      "power_outlet_count": 0,
+      "interface_count": 7,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 28,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/28/?format=json",
+      "display": "Continent2",
+      "name": "Continent2",
+      "device_type": {
+        "id": 14,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/14/?format=json",
+        "display": "ipc-500fw",
+        "manufacturer": {
+          "id": 3,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/3/?format=json",
+          "display": "kontinent",
+          "name": "kontinent",
+          "slug": "kontinent"
+        },
+        "model": "ipc-500fw",
+        "slug": "kontinent-ipc-500fw"
+      },
+      "role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "device_role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/4/?format=json",
+        "display": "Серверная",
+        "name": "Серверная",
+        "slug": "servernaya",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/3/?format=json",
+        "display": "shs-3",
+        "name": "shs-3"
+      },
+      "position": 20,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": null,
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2024-05-29T08:36:21.834649Z",
+      "last_updated": "2024-05-29T08:43:47.405706Z",
+      "console_port_count": 1,
+      "console_server_port_count": 0,
+      "power_port_count": 1,
+      "power_outlet_count": 0,
+      "interface_count": 7,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 26,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/26/?format=json",
+      "display": "UPS Slides",
+      "name": "UPS Slides",
+      "device_type": {
+        "id": 17,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/17/?format=json",
+        "display": "Slides",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "Slides",
+        "slug": "slides"
+      },
+      "role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "device_role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/4/?format=json",
+        "display": "Серверная",
+        "name": "Серверная",
+        "slug": "servernaya",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/3/?format=json",
+        "display": "shs-3",
+        "name": "shs-3"
+      },
+      "position": 10,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": null,
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2024-05-29T08:33:37.402293Z",
+      "last_updated": "2024-05-29T08:33:37.402317Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 25,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/25/?format=json",
+      "display": "power switch",
+      "name": "power switch",
+      "device_type": {
+        "id": 16,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/16/?format=json",
+        "display": "power-switch",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "power-switch",
+        "slug": "power-switch"
+      },
+      "role": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/4/?format=json",
+        "display": "Power supply",
+        "name": "Power supply",
+        "slug": "power-supply"
+      },
+      "device_role": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/4/?format=json",
+        "display": "Power supply",
+        "name": "Power supply",
+        "slug": "power-supply"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/4/?format=json",
+        "display": "Серверная",
+        "name": "Серверная",
+        "slug": "servernaya",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/3/?format=json",
+        "display": "shs-3",
+        "name": "shs-3"
+      },
+      "position": 7,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": null,
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2024-05-29T08:30:04.256176Z",
+      "last_updated": "2024-05-29T08:30:04.256202Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 29,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/29/?format=json",
+      "display": "provider-switch",
+      "name": "provider-switch",
+      "device_type": {
+        "id": 18,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/18/?format=json",
+        "display": "DGS-1210-28X",
+        "manufacturer": {
+          "id": 4,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/4/?format=json",
+          "display": "D-link",
+          "name": "D-link",
+          "slug": "d-link"
+        },
+        "model": "DGS-1210-28X",
+        "slug": "dgs-1210-28x"
+      },
+      "role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "device_role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/4/?format=json",
+        "display": "Серверная",
+        "name": "Серверная",
+        "slug": "servernaya",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/3/?format=json",
+        "display": "shs-3",
+        "name": "shs-3"
+      },
+      "position": 21,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": null,
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2024-05-29T08:39:59.654666Z",
+      "last_updated": "2024-05-29T08:44:32.137279Z",
+      "console_port_count": 1,
+      "console_server_port_count": 0,
+      "power_port_count": 1,
+      "power_outlet_count": 0,
+      "interface_count": 29,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 3,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/3/?format=json",
+      "display": "shs1-main-fiber",
+      "name": "shs1-main-fiber",
+      "device_type": {
+        "id": 10,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/10/?format=json",
+        "display": "LC-24-double-port Fiber Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "LC-24-double-port Fiber Patch Panel Half Depth",
+        "slug": "generic-lc-24-double-port-fiber-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/3/?format=json",
+        "display": "Отдел АСУП",
+        "name": "Отдел АСУП",
+        "slug": "asup-room-shs-1",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/1/?format=json",
+        "display": "shs-1",
+        "name": "shs-1"
+      },
+      "position": 40,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-27T10:45:49.446366Z",
+      "last_updated": "2023-12-27T10:45:49.446386Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 48,
+      "rear_port_count": 48,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 19,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/19/?format=json",
+      "display": "shs1-patch-panel-all",
+      "name": "shs1-patch-panel-all",
+      "device_type": {
+        "id": 9,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/9/?format=json",
+        "display": "48-port Copper Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "48-port Copper Patch Panel Half Depth",
+        "slug": "generic-48-port-copper-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/3/?format=json",
+        "display": "Отдел АСУП",
+        "name": "Отдел АСУП",
+        "slug": "asup-room-shs-1",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/1/?format=json",
+        "display": "shs-1",
+        "name": "shs-1"
+      },
+      "position": 35,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T07:33:50.342488Z",
+      "last_updated": "2023-12-28T07:33:50.342508Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 48,
+      "rear_port_count": 48,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 18,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/18/?format=json",
+      "display": "shs1-patch-panel-fzd+other",
+      "name": "shs1-patch-panel-fzd+other",
+      "device_type": {
+        "id": 8,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/8/?format=json",
+        "display": "24-port Copper Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "24-port Copper Patch Panel Half Depth",
+        "slug": "generic-24-port-copper-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/3/?format=json",
+        "display": "Отдел АСУП",
+        "name": "Отдел АСУП",
+        "slug": "asup-room-shs-1",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/1/?format=json",
+        "display": "shs-1",
+        "name": "shs-1"
+      },
+      "position": 28,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T07:32:50.509897Z",
+      "last_updated": "2023-12-28T07:32:50.509918Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 24,
+      "rear_port_count": 24,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 5,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/5/?format=json",
+      "display": "shs1-users",
+      "name": "shs1-users",
+      "device_type": {
+        "id": 7,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/7/?format=json",
+        "display": "S2985G-48T",
+        "manufacturer": {
+          "id": 1,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/1/?format=json",
+          "display": "SNR",
+          "name": "SNR",
+          "slug": "snr"
+        },
+        "model": "S2985G-48T",
+        "slug": "snr-s2975g-48t"
+      },
+      "role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "device_role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/3/?format=json",
+        "display": "Отдел АСУП",
+        "name": "Отдел АСУП",
+        "slug": "asup-room-shs-1",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/1/?format=json",
+        "display": "shs-1",
+        "name": "shs-1"
+      },
+      "position": 30,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": null,
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T03:54:31.441901Z",
+      "last_updated": "2023-12-28T03:54:31.441921Z",
+      "console_port_count": 1,
+      "console_server_port_count": 0,
+      "power_port_count": 1,
+      "power_outlet_count": 0,
+      "interface_count": 53,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 7,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/7/?format=json",
+      "display": "shs2-main-fiber",
+      "name": "shs2-main-fiber",
+      "device_type": {
+        "id": 10,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/10/?format=json",
+        "display": "LC-24-double-port Fiber Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "LC-24-double-port Fiber Patch Panel Half Depth",
+        "slug": "generic-lc-24-double-port-fiber-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 5,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/5/?format=json",
+        "display": "Телетайп",
+        "name": "Телетайп",
+        "slug": "teletype",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/2/?format=json",
+        "display": "shs-2",
+        "name": "shs-2"
+      },
+      "position": 34,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T07:00:19.456733Z",
+      "last_updated": "2023-12-28T07:00:19.456769Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 48,
+      "rear_port_count": 48,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 11,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/11/?format=json",
+      "display": "shs2-organizer1",
+      "name": "shs2-organizer1",
+      "device_type": {
+        "id": 12,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/12/?format=json",
+        "display": "cable-management-panel-1ru",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "cable-management-panel-1ru",
+        "slug": "generic-cable-management-panel-1ru"
+      },
+      "role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "device_role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 5,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/5/?format=json",
+        "display": "Телетайп",
+        "name": "Телетайп",
+        "slug": "teletype",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/2/?format=json",
+        "display": "shs-2",
+        "name": "shs-2"
+      },
+      "position": 32,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T07:24:40.752716Z",
+      "last_updated": "2023-12-28T07:24:40.752735Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 12,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/12/?format=json",
+      "display": "shs2-organizer2",
+      "name": "shs2-organizer2",
+      "device_type": {
+        "id": 12,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/12/?format=json",
+        "display": "cable-management-panel-1ru",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "cable-management-panel-1ru",
+        "slug": "generic-cable-management-panel-1ru"
+      },
+      "role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "device_role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 5,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/5/?format=json",
+        "display": "Телетайп",
+        "name": "Телетайп",
+        "slug": "teletype",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/2/?format=json",
+        "display": "shs-2",
+        "name": "shs-2"
+      },
+      "position": 29,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T07:25:16.245763Z",
+      "last_updated": "2023-12-28T07:25:16.245788Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 10,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/10/?format=json",
+      "display": "shs2-patch-panel-user",
+      "name": "shs2-patch-panel-user",
+      "device_type": {
+        "id": 8,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/8/?format=json",
+        "display": "24-port Copper Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "24-port Copper Patch Panel Half Depth",
+        "slug": "generic-24-port-copper-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 5,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/5/?format=json",
+        "display": "Телетайп",
+        "name": "Телетайп",
+        "slug": "teletype",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/2/?format=json",
+        "display": "shs-2",
+        "name": "shs-2"
+      },
+      "position": 27,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T07:03:32.460187Z",
+      "last_updated": "2023-12-28T07:03:32.460209Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 24,
+      "rear_port_count": 24,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 9,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/9/?format=json",
+      "display": "shs2-patch-panel-user+fzd",
+      "name": "shs2-patch-panel-user+fzd",
+      "device_type": {
+        "id": 8,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/8/?format=json",
+        "display": "24-port Copper Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "24-port Copper Patch Panel Half Depth",
+        "slug": "generic-24-port-copper-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 5,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/5/?format=json",
+        "display": "Телетайп",
+        "name": "Телетайп",
+        "slug": "teletype",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/2/?format=json",
+        "display": "shs-2",
+        "name": "shs-2"
+      },
+      "position": 30,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T07:02:33.056717Z",
+      "last_updated": "2023-12-28T07:02:33.056736Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 24,
+      "rear_port_count": 24,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 8,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/8/?format=json",
+      "display": "shs2-users",
+      "name": "shs2-users",
+      "device_type": {
+        "id": 7,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/7/?format=json",
+        "display": "S2985G-48T",
+        "manufacturer": {
+          "id": 1,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/1/?format=json",
+          "display": "SNR",
+          "name": "SNR",
+          "slug": "snr"
+        },
+        "model": "S2985G-48T",
+        "slug": "snr-s2975g-48t"
+      },
+      "role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "device_role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 5,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/5/?format=json",
+        "display": "Телетайп",
+        "name": "Телетайп",
+        "slug": "teletype",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/2/?format=json",
+        "display": "shs-2",
+        "name": "shs-2"
+      },
+      "position": 33,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": null,
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T07:01:30.279567Z",
+      "last_updated": "2023-12-28T07:01:30.279588Z",
+      "console_port_count": 1,
+      "console_server_port_count": 0,
+      "power_port_count": 1,
+      "power_outlet_count": 0,
+      "interface_count": 53,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 30,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/30/?format=json",
+      "display": "shs3-other",
+      "name": "shs3-other",
+      "device_type": {
+        "id": 6,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/6/?format=json",
+        "display": "S2985G-24T",
+        "manufacturer": {
+          "id": 1,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/1/?format=json",
+          "display": "SNR",
+          "name": "SNR",
+          "slug": "snr"
+        },
+        "model": "S2985G-24T",
+        "slug": "snr-s2985g-24t"
+      },
+      "role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "device_role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/4/?format=json",
+        "display": "Серверная",
+        "name": "Серверная",
+        "slug": "servernaya",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/3/?format=json",
+        "display": "shs-3",
+        "name": "shs-3"
+      },
+      "position": 32,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": null,
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2024-05-29T08:47:31.204724Z",
+      "last_updated": "2024-05-29T08:47:31.204750Z",
+      "console_port_count": 1,
+      "console_server_port_count": 0,
+      "power_port_count": 1,
+      "power_outlet_count": 0,
+      "interface_count": 29,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 31,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/31/?format=json",
+      "display": "shs3-patch-panel-3",
+      "name": "shs3-patch-panel-3",
+      "device_type": {
+        "id": 8,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/8/?format=json",
+        "display": "24-port Copper Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "24-port Copper Patch Panel Half Depth",
+        "slug": "generic-24-port-copper-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/4/?format=json",
+        "display": "Серверная",
+        "name": "Серверная",
+        "slug": "servernaya",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/3/?format=json",
+        "display": "shs-3",
+        "name": "shs-3"
+      },
+      "position": 35,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2024-05-29T08:58:00.864911Z",
+      "last_updated": "2024-05-29T08:58:00.864936Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 24,
+      "rear_port_count": 24,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 33,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/33/?format=json",
+      "display": "shs4-1-patch-panel",
+      "name": "shs4-1-patch-panel",
+      "device_type": {
+        "id": 8,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/8/?format=json",
+        "display": "24-port Copper Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "24-port Copper Patch Panel Half Depth",
+        "slug": "generic-24-port-copper-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 8,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/8/?format=json",
+        "display": "Охрана",
+        "name": "Охрана",
+        "slug": "ohrana",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 21,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/21/?format=json",
+        "display": "shs-4.1",
+        "name": "shs-4.1"
+      },
+      "position": 7,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2024-05-31T09:35:54.497030Z",
+      "last_updated": "2024-05-31T09:35:54.497056Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 24,
+      "rear_port_count": 24,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 32,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/32/?format=json",
+      "display": "shs4-1-switch",
+      "name": "shs4-1-switch",
+      "device_type": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/2/?format=json",
+        "display": "S2982G-8T-POE",
+        "manufacturer": {
+          "id": 1,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/1/?format=json",
+          "display": "SNR",
+          "name": "SNR",
+          "slug": "snr"
+        },
+        "model": "S2982G-8T-POE",
+        "slug": "snr-s2982g-8t-poe"
+      },
+      "role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "device_role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 8,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/8/?format=json",
+        "display": "Охрана",
+        "name": "Охрана",
+        "slug": "ohrana",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 21,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/21/?format=json",
+        "display": "shs-4.1",
+        "name": "shs-4.1"
+      },
+      "position": 11,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": null,
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "S2985G-8T-POE",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2024-05-31T09:32:36.418157Z",
+      "last_updated": "2024-05-31T09:32:36.418181Z",
+      "console_port_count": 1,
+      "console_server_port_count": 0,
+      "power_port_count": 1,
+      "power_outlet_count": 0,
+      "interface_count": 11,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 6,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/6/?format=json",
+      "display": "shs4-distribution",
+      "name": "shs4-distribution",
+      "device_type": {
+        "id": 11,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/11/?format=json",
+        "display": "S2990G-24FX",
+        "manufacturer": {
+          "id": 1,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/1/?format=json",
+          "display": "SNR",
+          "name": "SNR",
+          "slug": "snr"
+        },
+        "model": "S2990G-24FX",
+        "slug": "snr-s2990g-24fx"
+      },
+      "role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "device_role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/4/?format=json",
+        "display": "Серверная",
+        "name": "Серверная",
+        "slug": "servernaya",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/4/?format=json",
+        "display": "shs-4",
+        "name": "shs-4"
+      },
+      "position": 34,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": null,
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T06:15:10.120727Z",
+      "last_updated": "2023-12-28T06:15:10.120747Z",
+      "console_port_count": 1,
+      "console_server_port_count": 0,
+      "power_port_count": 1,
+      "power_outlet_count": 0,
+      "interface_count": 29,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 4,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/4/?format=json",
+      "display": "shs4-main-fiber",
+      "name": "shs4-main-fiber",
+      "device_type": {
+        "id": 10,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/10/?format=json",
+        "display": "LC-24-double-port Fiber Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "LC-24-double-port Fiber Patch Panel Half Depth",
+        "slug": "generic-lc-24-double-port-fiber-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/4/?format=json",
+        "display": "Серверная",
+        "name": "Серверная",
+        "slug": "servernaya",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/4/?format=json",
+        "display": "shs-4",
+        "name": "shs-4"
+      },
+      "position": 39,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-27T10:47:07.323897Z",
+      "last_updated": "2023-12-29T03:54:31.969233Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 48,
+      "rear_port_count": 48,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 35,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/35/?format=json",
+      "display": "shs4-patch-panel-1",
+      "name": "shs4-patch-panel-1",
+      "device_type": {
+        "id": 8,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/8/?format=json",
+        "display": "24-port Copper Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "24-port Copper Patch Panel Half Depth",
+        "slug": "generic-24-port-copper-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/4/?format=json",
+        "display": "Серверная",
+        "name": "Серверная",
+        "slug": "servernaya",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/4/?format=json",
+        "display": "shs-4",
+        "name": "shs-4"
+      },
+      "position": 33,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2024-05-31T09:45:51.592142Z",
+      "last_updated": "2024-05-31T09:45:51.592181Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 24,
+      "rear_port_count": 24,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 34,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/34/?format=json",
+      "display": "shs4-patch-panel-2",
+      "name": "shs4-patch-panel-2",
+      "device_type": {
+        "id": 8,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/8/?format=json",
+        "display": "24-port Copper Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "24-port Copper Patch Panel Half Depth",
+        "slug": "generic-24-port-copper-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/4/?format=json",
+        "display": "Серверная",
+        "name": "Серверная",
+        "slug": "servernaya",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/4/?format=json",
+        "display": "shs-4",
+        "name": "shs-4"
+      },
+      "position": 32,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2024-05-31T09:45:26.203603Z",
+      "last_updated": "2024-05-31T09:45:26.203632Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 24,
+      "rear_port_count": 24,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 21,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/21/?format=json",
+      "display": "shs6-fiber-territory1",
+      "name": "shs6-fiber-territory1",
+      "device_type": {
+        "id": 10,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/10/?format=json",
+        "display": "LC-24-double-port Fiber Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "LC-24-double-port Fiber Patch Panel Half Depth",
+        "slug": "generic-lc-24-double-port-fiber-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 12,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/12/?format=json",
+        "display": "Цех 9",
+        "name": "Цех 9",
+        "slug": "tseh9",
+        "_depth": 1
+      },
+      "rack": {
+        "id": 6,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/6/?format=json",
+        "display": "shs-6",
+        "name": "shs-6"
+      },
+      "position": 34,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-29T04:10:30.770222Z",
+      "last_updated": "2023-12-29T04:10:30.770248Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 48,
+      "rear_port_count": 48,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 22,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/22/?format=json",
+      "display": "shs6-fiber-territory2",
+      "name": "shs6-fiber-territory2",
+      "device_type": {
+        "id": 10,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/10/?format=json",
+        "display": "LC-24-double-port Fiber Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "LC-24-double-port Fiber Patch Panel Half Depth",
+        "slug": "generic-lc-24-double-port-fiber-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 12,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/12/?format=json",
+        "display": "Цех 9",
+        "name": "Цех 9",
+        "slug": "tseh9",
+        "_depth": 1
+      },
+      "rack": {
+        "id": 6,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/6/?format=json",
+        "display": "shs-6",
+        "name": "shs-6"
+      },
+      "position": 36,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-29T04:10:50.266320Z",
+      "last_updated": "2023-12-29T04:10:50.266341Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 48,
+      "rear_port_count": 48,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 20,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/20/?format=json",
+      "display": "shs6-main-fiber",
+      "name": "shs6-main-fiber",
+      "device_type": {
+        "id": 10,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/10/?format=json",
+        "display": "LC-24-double-port Fiber Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "LC-24-double-port Fiber Patch Panel Half Depth",
+        "slug": "generic-lc-24-double-port-fiber-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 12,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/12/?format=json",
+        "display": "Цех 9",
+        "name": "Цех 9",
+        "slug": "tseh9",
+        "_depth": 1
+      },
+      "rack": {
+        "id": 6,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/6/?format=json",
+        "display": "shs-6",
+        "name": "shs-6"
+      },
+      "position": 33,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-29T04:09:30.345617Z",
+      "last_updated": "2023-12-29T04:09:30.345639Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 48,
+      "rear_port_count": 48,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 2,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/2/?format=json",
+      "display": "video and other",
+      "name": "video and other",
+      "device_type": {
+        "id": 8,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/8/?format=json",
+        "display": "24-port Copper Patch Panel Half Depth",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "24-port Copper Patch Panel Half Depth",
+        "slug": "generic-24-port-copper-patch-panel-half-depth"
+      },
+      "role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "device_role": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/3/?format=json",
+        "display": "cabling",
+        "name": "cabling",
+        "slug": "cabling"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/3/?format=json",
+        "display": "Отдел АСУП",
+        "name": "Отдел АСУП",
+        "slug": "asup-room-shs-1",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/1/?format=json",
+        "display": "shs-1",
+        "name": "shs-1"
+      },
+      "position": 38,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-25T06:16:53.777162Z",
+      "last_updated": "2023-12-28T07:28:38.746800Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 24,
+      "rear_port_count": 24,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 1,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/1/?format=json",
+      "display": "video switch",
+      "name": "video switch",
+      "device_type": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/2/?format=json",
+        "display": "S2982G-8T-POE",
+        "manufacturer": {
+          "id": 1,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/1/?format=json",
+          "display": "SNR",
+          "name": "SNR",
+          "slug": "snr"
+        },
+        "model": "S2982G-8T-POE",
+        "slug": "snr-s2982g-8t-poe"
+      },
+      "role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "device_role": {
+        "id": 2,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/2/?format=json",
+        "display": "switching",
+        "name": "switching",
+        "slug": "switching"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/3/?format=json",
+        "display": "Отдел АСУП",
+        "name": "Отдел АСУП",
+        "slug": "asup-room-shs-1",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/1/?format=json",
+        "display": "shs-1",
+        "name": "shs-1"
+      },
+      "position": 37,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": null,
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-25T06:10:58.294981Z",
+      "last_updated": "2023-12-28T07:28:52.240444Z",
+      "console_port_count": 1,
+      "console_server_port_count": 0,
+      "power_port_count": 1,
+      "power_outlet_count": 0,
+      "interface_count": 11,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 13,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/13/?format=json",
+      "display": "Generic cable-management-panel-1ru (13)",
+      "name": null,
+      "device_type": {
+        "id": 12,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/12/?format=json",
+        "display": "cable-management-panel-1ru",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "cable-management-panel-1ru",
+        "slug": "generic-cable-management-panel-1ru"
+      },
+      "role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "device_role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/3/?format=json",
+        "display": "Отдел АСУП",
+        "name": "Отдел АСУП",
+        "slug": "asup-room-shs-1",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/1/?format=json",
+        "display": "shs-1",
+        "name": "shs-1"
+      },
+      "position": 39,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T07:30:05.170557Z",
+      "last_updated": "2023-12-28T07:31:36.315305Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 14,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/14/?format=json",
+      "display": "Generic cable-management-panel-1ru (14)",
+      "name": null,
+      "device_type": {
+        "id": 12,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/12/?format=json",
+        "display": "cable-management-panel-1ru",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "cable-management-panel-1ru",
+        "slug": "generic-cable-management-panel-1ru"
+      },
+      "role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "device_role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/3/?format=json",
+        "display": "Отдел АСУП",
+        "name": "Отдел АСУП",
+        "slug": "asup-room-shs-1",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/1/?format=json",
+        "display": "shs-1",
+        "name": "shs-1"
+      },
+      "position": 34,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T07:30:20.327097Z",
+      "last_updated": "2023-12-28T07:30:20.327120Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 15,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/15/?format=json",
+      "display": "Generic cable-management-panel-1ru (15)",
+      "name": null,
+      "device_type": {
+        "id": 12,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/12/?format=json",
+        "display": "cable-management-panel-1ru",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "cable-management-panel-1ru",
+        "slug": "generic-cable-management-panel-1ru"
+      },
+      "role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "device_role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/3/?format=json",
+        "display": "Отдел АСУП",
+        "name": "Отдел АСУП",
+        "slug": "asup-room-shs-1",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/1/?format=json",
+        "display": "shs-1",
+        "name": "shs-1"
+      },
+      "position": 29,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T07:30:43.109194Z",
+      "last_updated": "2023-12-28T07:30:43.109215Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 16,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/16/?format=json",
+      "display": "Generic cable-management-panel-1ru (16)",
+      "name": null,
+      "device_type": {
+        "id": 12,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/12/?format=json",
+        "display": "cable-management-panel-1ru",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "cable-management-panel-1ru",
+        "slug": "generic-cable-management-panel-1ru"
+      },
+      "role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "device_role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/3/?format=json",
+        "display": "Отдел АСУП",
+        "name": "Отдел АСУП",
+        "slug": "asup-room-shs-1",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/1/?format=json",
+        "display": "shs-1",
+        "name": "shs-1"
+      },
+      "position": null,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T07:30:49.359414Z",
+      "last_updated": "2023-12-28T07:30:49.359432Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 17,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/17/?format=json",
+      "display": "Generic cable-management-panel-1ru (17)",
+      "name": null,
+      "device_type": {
+        "id": 12,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/12/?format=json",
+        "display": "cable-management-panel-1ru",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "cable-management-panel-1ru",
+        "slug": "generic-cable-management-panel-1ru"
+      },
+      "role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "device_role": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/1/?format=json",
+        "display": "Cable management",
+        "name": "Cable management",
+        "slug": "cable-management"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/3/?format=json",
+        "display": "Отдел АСУП",
+        "name": "Отдел АСУП",
+        "slug": "asup-room-shs-1",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/1/?format=json",
+        "display": "shs-1",
+        "name": "shs-1"
+      },
+      "position": 26,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": {
+        "value": "passive",
+        "label": "Passive"
+      },
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-28T07:31:54.909341Z",
+      "last_updated": "2023-12-28T07:31:54.909371Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    },
+    {
+      "id": 23,
+      "url": "http://192.168.0.216:8000/api/dcim/devices/23/?format=json",
+      "display": "Generic UPS Batteries 7U (23)",
+      "name": null,
+      "device_type": {
+        "id": 13,
+        "url": "http://192.168.0.216:8000/api/dcim/device-types/13/?format=json",
+        "display": "UPS Batteries 7U",
+        "manufacturer": {
+          "id": 2,
+          "url": "http://192.168.0.216:8000/api/dcim/manufacturers/2/?format=json",
+          "display": "Generic",
+          "name": "Generic",
+          "slug": "generic"
+        },
+        "model": "UPS Batteries 7U",
+        "slug": "ups-batteries-7u"
+      },
+      "role": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/4/?format=json",
+        "display": "Power supply",
+        "name": "Power supply",
+        "slug": "power-supply"
+      },
+      "device_role": {
+        "id": 4,
+        "url": "http://192.168.0.216:8000/api/dcim/device-roles/4/?format=json",
+        "display": "Power supply",
+        "name": "Power supply",
+        "slug": "power-supply"
+      },
+      "tenant": null,
+      "platform": null,
+      "serial": "",
+      "asset_tag": null,
+      "site": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/sites/1/?format=json",
+        "display": "smp",
+        "name": "smp",
+        "slug": "smp"
+      },
+      "location": {
+        "id": 3,
+        "url": "http://192.168.0.216:8000/api/dcim/locations/3/?format=json",
+        "display": "Отдел АСУП",
+        "name": "Отдел АСУП",
+        "slug": "asup-room-shs-1",
+        "_depth": 2
+      },
+      "rack": {
+        "id": 1,
+        "url": "http://192.168.0.216:8000/api/dcim/racks/1/?format=json",
+        "display": "shs-1",
+        "name": "shs-1"
+      },
+      "position": 1,
+      "face": {
+        "value": "front",
+        "label": "Front"
+      },
+      "latitude": null,
+      "longitude": null,
+      "parent_device": null,
+      "status": {
+        "value": "active",
+        "label": "Active"
+      },
+      "airflow": null,
+      "primary_ip": null,
+      "primary_ip4": null,
+      "primary_ip6": null,
+      "oob_ip": null,
+      "cluster": null,
+      "virtual_chassis": null,
+      "vc_position": null,
+      "vc_priority": null,
+      "description": "",
+      "comments": "",
+      "config_template": null,
+      "config_context": {},
+      "local_context_data": null,
+      "tags": [],
+      "custom_fields": {},
+      "created": "2023-12-29T09:23:35.819112Z",
+      "last_updated": "2023-12-29T09:23:35.819132Z",
+      "console_port_count": 0,
+      "console_server_port_count": 0,
+      "power_port_count": 0,
+      "power_outlet_count": 0,
+      "interface_count": 0,
+      "front_port_count": 0,
+      "rear_port_count": 0,
+      "device_bay_count": 0,
+      "module_bay_count": 0,
+      "inventory_item_count": 0
+    }
+  ]
+}

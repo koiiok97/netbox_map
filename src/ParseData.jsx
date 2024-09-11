@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import NetworkGraph from "./NetworkGraph";
 import Menu from "./components/menu/Menu";
+import responseRacks from "./data/racks.json";
+import responseDevices from "./data/devices.json";
 
-const urlDevices = "http://192.168.0.216:8000/api/dcim/devices/?format=json";
-const urlRacks = "http://192.168.0.216:8000/api/dcim/racks/?format=json";
+// const urlDevices = "http://192.168.0.216:8000/api/dcim/devices/?format=json";
+// const urlRacks = "http://192.168.0.216:8000/api/dcim/racks/?format=json";
 
-const headers = {
-  "Content-Type": "application/json",
-  Authorization: "Token e7ba8d619dcdf1da2e587918550dbef118dd8adc",
-};
+// const headers = {
+//   "Content-Type": "application/json",
+//   Authorization: "Token e7ba8d619dcdf1da2e587918550dbef118dd8adc",
+// };
 const colorRack = "rgba(102, 102, 170)";
 const colorNode = "rgba(88, 88, 88)";
 
@@ -21,10 +23,10 @@ export default function ParseData() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [responseRacks, responseDevices] = await Promise.all([
-          fetch(urlRacks, { headers: headers }).then((res) => res.json()),
-          fetch(urlDevices, { headers: headers }).then((res) => res.json()),
-        ]);
+        // const [responseRacks, responseDevices] = await Promise.all([
+        //   fetch(urlRacks, { headers: headers }).then((res) => res.json()),
+        //   fetch(urlDevices, { headers: headers }).then((res) => res.json()),
+        // ]);
         const nodeRacks = responseRacks.results.map((rack) => ({
           id: rack.name,
           color: colorRack,
@@ -99,12 +101,12 @@ export default function ParseData() {
 
   return (
     <>
-      <NetworkGraph data={filterData} />
       <Menu
         roles={allRoles}
         selectedRoles={selectedRoles}
         setSelectedRoles={setSelectedRoles}
       />
+      <NetworkGraph data={filterData} />{" "}
     </>
   );
 }
