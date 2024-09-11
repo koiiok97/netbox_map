@@ -39,9 +39,9 @@ export default function NetworkGraph({ data }) {
         "center",
         d3.forceCenter(dimensions.width / 2, dimensions.height / 2)
       )
-      .force("collision", d3.forceCollide().radius(16))
-      .force("x", d3.forceX(dimensions.width / 2).strength(0.005))
-      .force("y", d3.forceY(dimensions.height / 2).strength(0.005));
+      .force("collision", d3.forceCollide().radius(22))
+      .force("x", d3.forceX(dimensions.width / 2).strength(0.01))
+      .force("y", d3.forceY(dimensions.height / 2).strength(0.01));
 
     svg.selectAll("line").data(data.links).join("line").attr("stroke", "black");
 
