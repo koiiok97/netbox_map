@@ -1,26 +1,29 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import * as d3 from "d3";
 
 export default function NetworkGraph({ data }) {
-  //   const data = {
-  //     nodes: [{ id: "A", location: "server" }, { id: "B" }, { id: "C" }],
-  //     links: [
-  //       { source: "A", target: "B", color: "red" },
-  //       { source: "B", target: "C" },
-  //       { source: "C", target: "A" },
-  //     ],
-  //   };
-
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-
   const svgRef = useRef();
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+  console.log(data);
+
+  useEffect(() => {
+    const updateDimensions = () => {
+      const svgElement = svgRef.current;
+      setDimensions({
+        width: svgElement.clientWidth,
+        height: svgElement.clientHeight,
+      });
+    };
+    updateDimensions();
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
 
   useEffect(() => {
     const svg = d3
       .select(svgRef.current)
-      .attr("width", width)
-      .attr("height", height);
+      .attr("width", dimensions.width)
+      .attr("height", dimensions.height);
 
     const simulation = d3
       .forceSimulation(data.nodes)
@@ -29,10 +32,16 @@ export default function NetworkGraph({ data }) {
         d3
           .forceLink(data.links)
           .id((d) => d.id)
-          .distance(50)
+          .distance(33)
       )
       .force("charge", d3.forceManyBody().strength(-5))
-      .force("center", d3.forceCenter(width / 2, height / 2));
+      .force(
+        "center",
+        d3.forceCenter(dimensions.width / 2, dimensions.height / 2)
+      )
+      .force("collision", d3.forceCollide().radius(16))
+      .force("x", d3.forceX(dimensions.width / 2).strength(0.005))
+      .force("y", d3.forceY(dimensions.height / 2).strength(0.005));
 
     svg.selectAll("line").data(data.links).join("line").attr("stroke", "black");
 
@@ -40,9 +49,8 @@ export default function NetworkGraph({ data }) {
       .selectAll("circle")
       .data(data.nodes)
       .join("circle")
-      .attr("r", 10)
-      .attr("fill", (d) => d.color)
-      .call(drag(simulation));
+      .attr("r", (d) => (d.size ? d.size * 1.01 : 10))
+      .attr("fill", (d) => d.color);
 
     node.append("title").text((d) => d.id);
 
@@ -56,29 +64,14 @@ export default function NetworkGraph({ data }) {
 
       svg
         .selectAll("circle")
-        .attr("cx", (d) => d.x)
-        .attr("cy", (d) => d.y);
+        .attr("cx", (d) => Math.max(10, Math.min(dimensions.width - 10, d.x)))
+        .attr("cy", (d) => Math.max(10, Math.min(dimensions.height - 10, d.y)));
     });
+  }, [data, dimensions]);
 
-    function drag(simulation) {
-      return d3
-        .drag()
-        .on("start", (event, d) => {
-          if (!event.active) simulation.alphaTarget(0.3).restart();
-          d.fx = d.x;
-          d.fy = d.y;
-        })
-        .on("drag", (event, d) => {
-          d.fx = event.x;
-          d.fy = event.y;
-        })
-        .on("end", (event, d) => {
-          if (!event.active) simulation.alphaTarget(0);
-          d.fx = null;
-          d.fy = null;
-        });
-    }
-  }, [data]);
-
-  return <svg ref={svgRef}></svg>;
+  return (
+    <div id="graph">
+      <svg ref={svgRef} style={{ width: "100%", height: "100%" }}></svg>
+    </div>
+  );
 }

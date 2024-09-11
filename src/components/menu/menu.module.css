@@ -1,0 +1,36 @@
+.menu {
+  width: 300px;
+  height: 100vh;
+  float: right;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu button {
+  border-radius: 8px;
+  border: 2px solid rgb(150, 150, 150);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffffff00;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.menu button:hover {
+  border-color: #646cff;
+  background-color: #ffffff;
+  color: #000;
+}
+.menu button:focus,
+.menu button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}

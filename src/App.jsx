@@ -1,10 +1,14 @@
 import "./App.css";
-import JsonParseData from "./JsonParseData";
+import ParseData from "./ParseData";
+import Menu from "./components/menu/Menu";
 
 export default function App() {
+  console.log("render app");
+
   return (
     <>
-      <JsonParseData></JsonParseData>
+      <ParseData />
+      <Menu></Menu>
     </>
   );
 }
