@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useLayoutEffect } from "react";
 import * as d3 from "d3";
 
 export default function NetworkGraph({ data }) {
@@ -18,7 +18,7 @@ export default function NetworkGraph({ data }) {
     return () => window.removeEventListener("resize", updateDimensions);
   }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const svg = d3
       .select(svgRef.current)
       .attr("width", dimensions.width)
@@ -28,10 +28,7 @@ export default function NetworkGraph({ data }) {
       .forceSimulation(data.nodes)
       .force(
         "link",
-        d3
-          .forceLink(data.links)
-          .id((d) => d.id)
-          .distance(33)
+        d3.forceLink(data.links).id((d) => d.id)
       )
       .force("charge", d3.forceManyBody().strength(-5))
       .force(
@@ -39,11 +36,16 @@ export default function NetworkGraph({ data }) {
         d3.forceCenter(dimensions.width / 2, dimensions.height / 2)
       )
       .force("collision", d3.forceCollide().radius(22))
-      .force("x", d3.forceX(dimensions.width / 2).strength(0.001))
-      .force("y", d3.forceY(dimensions.height / 2).strength(0.001));
+      .force(
+        "collider",
+        d3.forceCollide().radius((d) => d.size + 25)
+      )
+      .force("x", d3.forceX(dimensions.width / 2).strength(0.03))
+      .force("y", d3.forceY(dimensions.height / 2).strength(0.03));
 
     svg.selectAll("line").data(data.links).join("line").attr("stroke", "black");
 
+    svg.selectAll("circle").remove();
     const node = svg
       .selectAll("circle")
       .data(data.nodes)
@@ -51,6 +53,7 @@ export default function NetworkGraph({ data }) {
       .attr("r", (d) => (d.size ? d.size * 1.01 : 10))
       .attr("fill", (d) => d.color);
 
+    node.selectAll("title").remove();
     node.append("title").text((d) => d.id);
 
     simulation.on("tick", () => {
