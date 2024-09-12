@@ -5,6 +5,16 @@ export default function NetworkGraph({ data }) {
   const svgRef = useRef();
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
+  const iconSize = 32;
+  const icons = {
+    null: "../public/iconsNetwork/mainframe.svg",
+    "Power supply": "../public/iconsNetwork/ups.svg",
+    switching: "../public/iconsNetwork/switch.svg",
+    "Cable management": "../public/iconsNetwork/switch.svg",
+    cabling: "../public/iconsNetwork/patch-panel.svg",
+    default: "../public/iconsNetwork/default.svg",
+  };
+
   useEffect(() => {
     const updateDimensions = () => {
       const svgElement = svgRef.current;
@@ -28,30 +38,39 @@ export default function NetworkGraph({ data }) {
       .forceSimulation(data.nodes)
       .force(
         "link",
-        d3.forceLink(data.links).id((d) => d.id)
+        d3
+          .forceLink(data.links)
+          .id((d) => d.id)
+          .distance(22)
       )
-      .force("charge", d3.forceManyBody().strength(-5))
+      .force("charge", d3.forceManyBody().strength(-100))
       .force(
         "center",
         d3.forceCenter(dimensions.width / 2, dimensions.height / 2)
       )
-      .force("collision", d3.forceCollide().radius(22))
+      .force("collision", d3.forceCollide().radius(iconSize * 1.2))
       .force(
         "collider",
-        d3.forceCollide().radius((d) => d.size + 25)
+        d3.forceCollide().radius((d) => d.size + iconSize * 1.2)
       )
-      .force("x", d3.forceX(dimensions.width / 2).strength(0.03))
-      .force("y", d3.forceY(dimensions.height / 2).strength(0.03));
+      .force("x", d3.forceX(dimensions.width / 2).strength(0.09))
+      .force("y", d3.forceY(dimensions.height / 2).strength(0.09));
 
+    svg.selectAll("line").remove();
     svg.selectAll("line").data(data.links).join("line").attr("stroke", "black");
 
-    svg.selectAll("circle").remove();
+    svg.selectAll("image").remove();
     const node = svg
-      .selectAll("circle")
+      .selectAll("image")
       .data(data.nodes)
-      .join("circle")
-      .attr("r", (d) => (d.size ? d.size * 1.01 : 10))
-      .attr("fill", (d) => d.color);
+      .join("image")
+      .attr("xlink:href", (d) => {
+        return icons[d.role] || icons["default"];
+      })
+      .attr("width", iconSize)
+      .attr("height", iconSize)
+      .attr("x", (d) => d.x)
+      .attr("y", (d) => d.y);
 
     node.selectAll("title").remove();
     node.append("title").text((d) => d.id);
@@ -65,9 +84,19 @@ export default function NetworkGraph({ data }) {
         .attr("y2", (d) => d.target.y);
 
       svg
-        .selectAll("circle")
-        .attr("cx", (d) => Math.max(10, Math.min(dimensions.width - 10, d.x)))
-        .attr("cy", (d) => Math.max(10, Math.min(dimensions.height - 10, d.y)));
+        .selectAll("image")
+        .attr("x", (d) =>
+          Math.max(
+            iconSize,
+            Math.min(dimensions.width - iconSize, d.x - iconSize / 2)
+          )
+        )
+        .attr("y", (d) =>
+          Math.max(
+            iconSize,
+            Math.min(dimensions.height - iconSize, d.y - iconSize / 2)
+          )
+        );
     });
   }, [data, dimensions]);
 

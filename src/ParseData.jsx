@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import loadingIcon from "../public/loading.gif";
 import NetworkGraph from "./NetworkGraph";
 import Menu from "./components/menu/Menu";
 
@@ -28,7 +29,7 @@ export default function ParseData() {
         const nodeRacks = responseRacks.results.map((rack) => ({
           id: rack.name,
           color: colorRack,
-          size: rack.device_count + 10,
+          deviceCount: rack.device_count,
           role: null,
           location: rack.location.name,
         }));
@@ -37,7 +38,6 @@ export default function ParseData() {
           .filter((dev) => dev.name !== null)
           .map((dev) => ({
             id: dev.name,
-            rack: dev.rack.name,
             role: dev.role.name,
             color: colorNode,
           }));
@@ -68,7 +68,10 @@ export default function ParseData() {
 
   const filterNodes = selectedRoles.length
     ? networkData.nodes.filter((node) => {
-        if (node.role === null) return true;
+        if (node.role === null && node.deviceCount) {
+          return true;
+        }
+
         return selectedRoles.includes(node.role);
       })
     : networkData.nodes;
@@ -87,15 +90,26 @@ export default function ParseData() {
       })),
   };
 
-  loading && <div>Loading....</div>;
-  return (
-    <>
-      <Menu
-        roles={allRoles}
-        selectedRoles={selectedRoles}
-        setSelectedRoles={setSelectedRoles}
-      />
-      <NetworkGraph data={filterData} />{" "}
-    </>
-  );
+  if (loading) {
+    return (
+      <>
+        <img
+          src={loadingIcon}
+          alt="Loading..."
+          style={{ width: "100px", height: "100px" }}
+        />
+      </>
+    );
+  } else {
+    return (
+      <>
+        <Menu
+          roles={allRoles}
+          selectedRoles={selectedRoles}
+          setSelectedRoles={setSelectedRoles}
+        />
+        <NetworkGraph data={filterData} />{" "}
+      </>
+    );
+  }
 }
