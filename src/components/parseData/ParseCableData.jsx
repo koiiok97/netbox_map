@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import loadingIcon from "../../../public/loading.gif";
 import NetworkGraph from "../../components/graph/NetworkGraph";
 
-const urlCables = "http://192.168.0.216:8000/api/dcim/cables/?format=json";
+const urlCables =
+  "http://192.168.0.216:8000/api/dcim/cables/?format=json&limit=1000";
 
 const headers = {
   "Content-Type": "application/json",
@@ -22,9 +23,35 @@ export default function ParseData() {
           fetch(urlCables, { headers: headers }).then((res) => res.json()),
         ]);
 
-        const devices = response.map((dev) => {});
+        const aTerminations = response[0].results.map((dev) => ({
+          id: dev.a_terminations[0].object.device.name,
+        }));
+        const bTerminations = response[0].results.map((dev) => ({
+          id: dev.b_terminations[0].object.device.name,
+        }));
 
-        console.log(response);
+        const uniqueTerminations = [
+          ...new Set([...aTerminations, ...bTerminations].map((dev) => dev.id)),
+        ].map((dev) => ({
+          id: dev,
+        }));
+
+        const linkDevices = [
+          ...new Map(
+            response[0].results.map((dev) => [
+              `${dev.a_terminations[0].object.device.name}-${dev.b_terminations[0].object.device.name}`,
+              {
+                source: dev.a_terminations[0].object.device.name,
+                target: dev.b_terminations[0].object.device.name,
+              },
+            ])
+          ).values(),
+        ];
+
+        setNetworkData({
+          nodes: uniqueTerminations,
+          links: linkDevices,
+        });
 
         setLoading(false);
       } catch (e) {
@@ -48,8 +75,9 @@ export default function ParseData() {
   } else {
     return (
       <>
+        {console.log(networkData)}
         <div>text</div>
-        {/* <NetworkGraph data={filterData} /> */}
+        <NetworkGraph data={networkData} />
       </>
     );
   }

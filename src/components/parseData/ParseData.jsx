@@ -3,8 +3,10 @@ import loadingIcon from "../../../public/loading.gif";
 import NetworkGraph from "../graph/NetworkGraph";
 import Menu from "../menu/Menu";
 
-const urlDevices = "http://192.168.0.216:8000/api/dcim/devices/?format=json";
-const urlRacks = "http://192.168.0.216:8000/api/dcim/racks/?format=json";
+const urlDevices =
+  "http://192.168.0.216:8000/api/dcim/devices/?format=json&limit=1000";
+const urlRacks =
+  "http://192.168.0.216:8000/api/dcim/racks/?format=json&limit=1000";
 
 const headers = {
   "Content-Type": "application/json",
@@ -63,6 +65,7 @@ export default function ParseData() {
       }
     };
     fetchData();
+    setSelectedRoles(["switching", "cabling"]);
   }, []);
 
   const filterNodes = selectedRoles.length
