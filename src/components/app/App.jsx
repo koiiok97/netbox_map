@@ -1,11 +1,11 @@
 import "./App.css";
-import ParseData from "../parseData/ParseData";
+import ParseDeviceData from "../parseData/ParseDeviceData";
 import ParseCableData from "../parseData/ParseCableData";
 
 export default function App() {
   return (
     <>
-      {/* <ParseData /> */}
+      {/* <ParseDeviceData /> */}
       <ParseCableData />
     </>
   );

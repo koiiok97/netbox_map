@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import loadingIcon from "../../../public/loading.gif";
 import NetworkGraph from "../graph/NetworkGraph";
 import Menu from "../menu/Menu";
+import { filterNodesByRoles } from "./filterNodesByRoles";
 
 const urlDevices =
   "http://192.168.0.216:8000/api/dcim/devices/?format=json&limit=1000";
@@ -68,29 +69,7 @@ export default function ParseData() {
     setSelectedRoles(["switching", "cabling"]);
   }, []);
 
-  const filterNodes = selectedRoles.length
-    ? networkData.nodes.filter((node) => {
-        if (node.role === null && node.deviceCount) {
-          return true;
-        }
-
-        return selectedRoles.includes(node.role);
-      })
-    : networkData.nodes;
-
-  const filterData = {
-    nodes: filterNodes,
-    links: networkData.links
-      .filter(
-        (link) =>
-          filterNodes.some((node) => node.id === link.source) &&
-          filterNodes.some((node) => node.id === link.target)
-      )
-      .map((link) => ({
-        source: link.source,
-        target: link.target,
-      })),
-  };
+  const filterData = filterNodesByRoles(networkData, selectedRoles);
 
   if (loading) {
     return (

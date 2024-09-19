@@ -22,7 +22,7 @@ export default function ParseData() {
         const response = await Promise.all([
           fetch(urlCables, { headers: headers }).then((res) => res.json()),
         ]);
-
+        console.log(response);
         const aTerminations = response[0].results.map((dev) => ({
           id: dev.a_terminations[0].object.device.name,
         }));
@@ -59,6 +59,7 @@ export default function ParseData() {
         setLoading(false);
       }
     };
+
     fetchData();
   }, []);
 
@@ -76,7 +77,6 @@ export default function ParseData() {
     return (
       <>
         {console.log(networkData)}
-        <div>text</div>
         <NetworkGraph data={networkData} />
       </>
     );

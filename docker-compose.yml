@@ -1,0 +1,6 @@
+version: "3.5"
+services:
+  netbox_map:
+    build: .
+    ports:
+      - "5173:5173"
