@@ -3,6 +3,7 @@ import * as d3 from "d3";
 
 export default function NetworkGraph({ data }) {
   const svgRef = useRef();
+  const gRef = useRef();
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
   const iconSize = 32;
@@ -33,7 +34,7 @@ export default function NetworkGraph({ data }) {
       .select(svgRef.current)
       .attr("width", dimensions.width)
       .attr("height", dimensions.height);
-
+    const g = d3.select(gRef.current);
     const simulation = d3
       .forceSimulation(data.nodes)
       .force(
@@ -41,26 +42,27 @@ export default function NetworkGraph({ data }) {
         d3
           .forceLink(data.links)
           .id((d) => d.id)
-          .distance(22)
+          .distance(50)
       )
-      .force("charge", d3.forceManyBody().strength(-100))
+      .force("charge", d3.forceManyBody().strength(-0.5))
       .force(
         "center",
         d3.forceCenter(dimensions.width / 2, dimensions.height / 2)
       )
-      .force("collision", d3.forceCollide().radius(iconSize * 1.2))
-      .force(
-        "collider",
-        d3.forceCollide().radius((d) => d.size + iconSize * 1.2)
-      )
-      .force("x", d3.forceX(dimensions.width / 2).strength(0.09))
-      .force("y", d3.forceY(dimensions.height / 2).strength(0.09));
+      .force("collision", d3.forceCollide().radius(iconSize * 1.1))
+      .force("collider", d3.forceCollide().radius(50))
+      .force("x", d3.forceX(dimensions.width / 2).strength(0.1))
+      .force("y", d3.forceY(dimensions.height / 2).strength(0.1));
 
-    svg.selectAll("line").remove();
-    svg.selectAll("line").data(data.links).join("line").attr("stroke", "black");
+    g.selectAll("line").remove();
+    g.selectAll("line")
+      .data(data.links)
+      .join("line")
+      .attr("stroke", "black")
+      .attr("stroke-width", 2);
 
-    svg.selectAll("image").remove();
-    const node = svg
+    g.selectAll("image").remove();
+    const node = g
       .selectAll("image")
       .data(data.nodes)
       .join("image")
@@ -85,24 +87,25 @@ export default function NetworkGraph({ data }) {
 
       svg
         .selectAll("image")
-        .attr("x", (d) =>
-          Math.max(
-            iconSize,
-            Math.min(dimensions.width - iconSize, d.x - iconSize / 2)
-          )
-        )
-        .attr("y", (d) =>
-          Math.max(
-            iconSize,
-            Math.min(dimensions.height - iconSize, d.y - iconSize / 2)
-          )
-        );
+        .attr("x", (d) => d.x - iconSize / 2)
+        .attr("y", (d) => d.y - iconSize / 2);
     });
+
+    const zoom = d3
+      .zoom()
+      .scaleExtent([0.5, 10])
+      .on("zoom", (event) => {
+        g.attr("transform", event.transform);
+      });
+
+    svg.call(zoom);
   }, [data, dimensions]);
 
   return (
     <div id="graph">
-      <svg ref={svgRef} style={{ width: "100%", height: "100%" }}></svg>
+      <svg ref={svgRef} style={{ width: "100%", height: "100%" }}>
+        <g ref={gRef}></g>
+      </svg>
     </div>
   );
 }
