@@ -63,13 +63,27 @@ export default function ParseData() {
 
         const linkCables = [
           ...new Map(
-            responseCables.results.map((dev) => [
-              `${dev.a_terminations[0].object.device.name}-${dev.b_terminations[0].object.device.name}`,
-              {
-                source: dev.a_terminations[0].object.device.name,
-                target: dev.b_terminations[0].object.device.name,
-              },
-            ])
+            responseCables.results.map((dev) => {
+              const a = dev.a_terminations;
+              const b = dev.b_terminations;
+              if (a.length > 0 && b.length > 0) {
+                return [
+                  `${a[0].object.device.name}-${b[0].object.device.name}`,
+                  {
+                    source: a[0].object.device.name,
+                    target: b[0].object.device.name,
+                  },
+                ];
+              } else {
+                return [
+                  `${null}-${null}`,
+                  {
+                    source: null,
+                    target: null,
+                  },
+                ];
+              }
+            })
           ).values(),
         ];
         const linkDevices = responseDevices.results
