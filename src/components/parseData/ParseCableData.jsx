@@ -3,6 +3,7 @@ import loadingIcon from "../../../public/loading.gif";
 import NetworkGraph from "../../components/graph/NetworkGraph";
 import Menu from "../menu/Menu";
 import { filterNodesByRoles } from "./filterNodesByRoles";
+
 const urlCables =
   "http://192.168.0.216:8000/api/dcim/cables/?format=json&limit=1000";
 const urlDevices =
@@ -109,7 +110,7 @@ export default function ParseData() {
     };
 
     fetchData();
-    setSelectedRoles(["switching"]);
+    // setSelectedRoles(["switching"]);
   }, []);
 
   const filterData = filterNodesByRoles(networkData, selectedRoles);
