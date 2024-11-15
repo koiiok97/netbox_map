@@ -29,73 +29,51 @@ export default function ParseData() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [responseCables, responseDevices, responseRacks] =
-          await Promise.all([
-            fetch(urlCables, { headers: headers }).then((res) => res.json()),
-            fetch(urlDevices, { headers: headers }).then((res) => res.json()),
-            fetch(urlRacks, { headers: headers }).then((res) => res.json()),
-          ]);
-        console.log(responseCables);
+        const [cables, devices, racks] = await Promise.all([
+          fetch(urlCables, { headers: headers }).then((res) => res.json()),
+          fetch(urlDevices, { headers: headers }).then((res) => res.json()),
+          fetch(urlRacks, { headers: headers }).then((res) => res.json()),
+        ]);
 
-        const nodeRacks = responseRacks.results.map((rack) => ({
+        const nodeRacks = racks.results.map((rack) => ({
           id: rack.name,
           color: colorRack,
           deviceCount: rack.device_count,
           role: null,
         }));
-
-        console.log(responseDevices);
-
-        const nodeDevices = responseDevices.results
-          .filter((dev) => dev.name !== null)
+        const nodeDevices = devices.results
+          .filter((dev) => dev.name)
           .map((dev) => ({
             id: dev.name,
-            role: dev.role.name,
+            role: dev.role?.name || "default",
             color: colorNode,
           }));
 
-        // const uniqueTerminations = [
-        //   ...new Set([...aTerminations, ...bTerminations].map((dev) => dev.id)),
-        // ].map((dev) => {
-        //   return {
-        //     id: dev,
-        //   };
-        // });
+        console.log(nodeDevices);
 
-        const linkCables = [
-          ...new Map(
-            responseCables.results.map((dev) => {
-              const a = dev.a_terminations;
-              const b = dev.b_terminations;
-              if (a.length > 0 && b.length > 0) {
-                return [
-                  `${a[0].object.device.name}-${b[0].object.device.name}`,
-                  {
-                    source: a[0].object.device.name,
-                    target: b[0].object.device.name,
-                  },
-                ];
-              } else {
-                return [
-                  `${null}-${null}`,
-                  {
-                    source: null,
-                    target: null,
-                  },
-                ];
-              }
-            })
-          ).values(),
-        ];
-        const linkDevices = responseDevices.results
-          .filter((dev) => dev.name !== null)
+        const linkCables = cables.results.flatMap((dev) => {
+          const a = dev.a_terminations;
+          const b = dev.b_terminations;
+          if (a.length > 0 && b.length > 0) {
+            return {
+              source: a[0]?.object?.device?.name,
+              target: b[0]?.object?.device?.name,
+            };
+          }
+          return [];
+        });
+
+        const linkDevices = devices.results
+          .filter((dev) => dev.name)
           .map((dev) => ({
-            source: dev.rack.name,
+            source: dev.rack?.name,
             target: dev.name,
           }));
-        const roles = [
-          ...new Set(responseDevices.results.map((dev) => dev.role.name)),
-        ];
+
+        const roles = Array.from(
+          new Set(devices.results.map((dev) => dev.role?.name || "default"))
+        );
+
         setAllRoles(roles);
         setNetworkData({
           nodes: [...nodeRacks, ...nodeDevices],
@@ -104,13 +82,13 @@ export default function ParseData() {
 
         setLoading(false);
       } catch (e) {
-        console.log("Ошибка", e);
+        console.error("Ошибка", e);
         setLoading(false);
       }
     };
 
     fetchData();
-    // setSelectedRoles(["switching"]);
+    setSelectedRoles(["switching"]);
   }, []);
 
   const filterData = filterNodesByRoles(networkData, selectedRoles);
